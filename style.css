@@ -618,36 +618,6 @@ a.contact-item:hover { transform: translateX(6px); color: var(--rose-600); }
 }
 .back-to-top.show { opacity: 1; pointer-events: auto; transform: translateY(0); }
 
-.voice-hint {
-  position: fixed;
-  bottom: 28px;
-  left: 28px;
-  background: linear-gradient(135deg, var(--rose-500), var(--rose-600));
-  color: #fff;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 999px;
-  font-family: var(--font-body);
-  font-weight: 600;
-  font-size: 0.85rem;
-  cursor: pointer;
-  box-shadow: var(--shadow);
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(12px);
-  transition: opacity var(--transition), transform var(--transition);
-  z-index: 900;
-}
-.voice-hint.show {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-  animation: voicePulse 1.8s ease-in-out infinite;
-}
-@keyframes voicePulse {
-  0%, 100% { box-shadow: 0 8px 20px rgba(180, 90, 100, 0.3); }
-  50% { box-shadow: 0 8px 28px rgba(180, 90, 100, 0.55); }
-}
 
 /* ===== Reveal Animation ===== */
 [data-reveal] {

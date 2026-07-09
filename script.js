@@ -3,32 +3,6 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ---------- Footer year ---------- */
   document.getElementById('year').textContent = new Date().getFullYear();
 
-  /* ---------- Voice intro ---------- */
-  const introAudio = document.getElementById('introAudio');
-  const voiceHint = document.getElementById('voiceHint');
-  let voicePlayed = false;
-
-  const tryPlayIntro = () => {
-    if (voicePlayed) return;
-    introAudio.play().then(() => {
-      voicePlayed = true;
-      voiceHint.classList.remove('show');
-    }).catch(() => {
-      voiceHint.classList.add('show');
-    });
-  };
-
-  tryPlayIntro();
-
-  ['click', 'keydown', 'touchstart', 'scroll'].forEach(evt => {
-    document.addEventListener(evt, tryPlayIntro, { once: true, passive: true });
-  });
-
-  voiceHint.addEventListener('click', () => {
-    voicePlayed = false;
-    tryPlayIntro();
-  });
-
   /* ---------- Navbar scroll state + progress bar ---------- */
   const navbar = document.getElementById('navbar');
   const progressBar = document.getElementById('progressBar');
