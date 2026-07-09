@@ -1,0 +1,8 @@
+desktop.ini
+Thumbs.db
+
+# Original source documents for certificates/previews — only the
+# .jpg/.png files derived from these are actually used by the site.
+certificates/*.pdf
+certificates/IDEATHON CRETIFICATE.png
+certificates/Screenshot*.png

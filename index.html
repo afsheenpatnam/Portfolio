@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afsheen Patnam | AI &amp; ML Developer</title>
+<meta name="description" content="Afsheen Patnam - B.Tech CSE (AI&ML) student, AI Intern, and aspiring entrepreneur building real deployed products.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Alex+Brush&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="introAudio" src="audio/intro.mp3" preload="auto"></audio>
+<button class="voice-hint" id="voiceHint" type="button">🔊 Hear Me</button>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- NAV -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="logo">Afsheen</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">Story</a>
+      <a href="#skills" class="nav-link">Toolkit</a>
+      <a href="#education" class="nav-link">Journey</a>
+      <a href="#experience" class="nav-link">Work</a>
+      <a href="#projects" class="nav-link">Creations</a>
+      <a href="#achievements" class="nav-link">Milestones</a>
+      <a href="#contact" class="nav-link">Connect</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg-shape"></div>
+  <div class="hero-inner">
+    <div class="hero-left" data-reveal>
+      <div class="hero-photo-wrap">
+        <img src="photo.png" alt="Afsheen Patnam" class="hero-photo">
+        <div class="hero-photo-ring"></div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <p class="eyebrow" data-reveal>Hi, I'm</p>
+      <h1 data-reveal>Afsheen Patnam</h1>
+      <p class="hero-role" data-reveal>
+        <span class="typed" id="typedRole"></span><span class="cursor">|</span>
+      </p>
+      <p class="hero-quote" data-reveal>
+        "AI/ML enthusiast, developer, and aspiring entrepreneur focused on building innovative
+        products that solve real-world problems and create lasting impact."
+      </p>
+      <div class="hero-cta" data-reveal>
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        <a href="Afsheen_Patnam_Resume.pdf" download class="btn btn-outline">Download Resume</a>
+      </div>
+      <div class="hero-socials" data-reveal>
+        <a href="mailto:afsheenpatnam1@gmail.com" title="Email">✉️</a>
+        <a href="https://github.com/afsheenpatnam" target="_blank" rel="noopener noreferrer" title="GitHub">🐙</a>
+        <span title="Location">📍 Tadipatri, Anantapur, AP</span>
+      </div>
+    </div>
+  </div>
+  <a href="#about" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="section-inner">
+    <p class="section-tag" data-reveal>The Story So Far</p>
+    <h2 class="section-title" data-reveal>Where <span>Curiosity</span> Meets Code</h2>
+    <div class="about-grid">
+      <p class="about-text" data-reveal>
+        I'm a B.Tech CSE (AI&amp;ML) student at <strong>Gouthami Institute of Technology and
+        Management for Women</strong> (2024&ndash;2028), specialising in AI &amp; Machine Learning.
+        I like building real-world projects alongside my academics &mdash; not just tutorials, but
+        products that actually go live. I'm currently an AI Intern, and I'm working toward
+        becoming an AI Engineer and entrepreneur who ships things that matter.
+      </p>
+      <div class="about-stats" data-reveal>
+        <a class="stat-card" href="#projects">
+          <span class="stat-num" data-count="4">0</span>
+          <span class="stat-label">Live Projects Deployed</span>
+        </a>
+        <a class="stat-card" href="#certifications">
+          <span class="stat-num" data-count="8">0</span>
+          <span class="stat-label">Certifications</span>
+        </a>
+        <a class="stat-card" href="#experience">
+          <span class="stat-num" data-count="3">0</span>
+          <span class="stat-label">Internships / Simulations</span>
+        </a>
+        <a class="stat-card" href="#languages">
+          <span class="stat-num" data-count="3">0</span>
+          <span class="stat-label">Languages Spoken</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section section-alt" id="skills">
+  <div class="section-inner">
+    <p class="section-tag" data-reveal>What I Work With</p>
+    <h2 class="section-title" data-reveal>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card" data-reveal>
+        <div class="skill-icon">🐍</div>
+        <h3>Python</h3>
+      </div>
+      <div class="skill-card" data-reveal>
+        <div class="skill-icon">🟨</div>
+        <h3>JavaScript</h3>
+      </div>
+      <div class="skill-card" data-reveal>
+        <div class="skill-icon">🔧</div>
+        <h3>C Programming</h3>
+      </div>
+      <div class="skill-card" data-reveal>
+        <div class="skill-icon">🌐</div>
+        <h3>HTML5 &amp; CSS3</h3>
+      </div>
+      <div class="skill-card" data-reveal>
+        <div class="skill-icon">🤖</div>
+        <h3>AI / Machine Learning</h3>
+      </div>
+      <div class="skill-card" data-reveal>
+        <div class="skill-icon">🍃</div>
+        <h3>MongoDB</h3>
+      </div>
+      <div class="skill-card" data-reveal>
+        <div class="skill-icon">🔥</div>
+        <h3>Firebase</h3>
+      </div>
+      <div class="skill-card" data-reveal>
+        <div class="skill-icon">🔀</div>
+        <h3>Git</h3>
+      </div>
+      <div class="skill-card" data-reveal>
+        <div class="skill-icon">🐙</div>
+        <h3>GitHub</h3>
+      </div>
+      <div class="skill-card" data-reveal>
+        <div class="skill-icon">🧱</div>
+        <h3>OOP</h3>
+      </div>
+      <div class="skill-card" data-reveal>
+        <div class="skill-icon">🗄️</div>
+        <h3>DBMS</h3>
+      </div>
+    </div>
+
+    <div class="soft-skills-block" data-reveal>
+      <h3 class="languages-title">Soft Skills</h3>
+      <div class="lang-tags">
+        <span class="lang-tag">Leadership</span>
+        <span class="lang-tag">Team Management</span>
+        <span class="lang-tag">Effective Communication</span>
+        <span class="lang-tag">Problem Solving</span>
+        <span class="lang-tag">Time Management</span>
+        <span class="lang-tag">Critical Thinking</span>
+        <span class="lang-tag">Team Collaboration</span>
+        <span class="lang-tag">Adaptability</span>
+        <span class="lang-tag">Quick Learning</span>
+        <span class="lang-tag">Project Management</span>
+      </div>
+    </div>
+
+    <div class="languages-block" id="languages" data-reveal>
+      <h3 class="languages-title">Languages</h3>
+      <div class="lang-tags">
+        <span class="lang-tag">English</span>
+        <span class="lang-tag">Telugu</span>
+        <span class="lang-tag">Hindi</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="section" id="education">
+  <div class="section-inner">
+    <p class="section-tag" data-reveal>My Foundation</p>
+    <h2 class="section-title" data-reveal>Academic Journey</h2>
+    <div class="timeline">
+      <div class="timeline-item" data-reveal>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2024 &ndash; 2028</span>
+          <h3>B.Tech &ndash; CSE (AI&amp;ML)</h3>
+          <p class="timeline-org">Gouthami Institute of Technology and Management for Women</p>
+          <p>Specialising in AI &amp; Machine Learning. Building real-world
+            projects alongside academics.</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-reveal>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2022 &ndash; 2024</span>
+          <h3>Intermediate</h3>
+          <p class="timeline-org">SR Junior Prime College</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-reveal>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Until 2022</span>
+          <h3>Schooling</h3>
+          <p class="timeline-org">Christ The King School</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section section-alt" id="experience">
+  <div class="section-inner">
+    <p class="section-tag" data-reveal>Where I've Worked</p>
+    <h2 class="section-title" data-reveal>Internships &amp; Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item" data-reveal>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">May &ndash; Jun 2026</span>
+          <h3>Artificial Intelligence Intern</h3>
+          <p class="timeline-org">Elewayte &ndash; Realtek Software Services Pvt Ltd</p>
+          <ul class="timeline-list">
+            <li>Worked on Artificial Intelligence-based tasks and assignments</li>
+            <li>Gained exposure to real-time projects and workflows</li>
+            <li>Learned industry best practices and development standards</li>
+            <li>Received guidance and mentorship from experienced professionals</li>
+          </ul>
+          <a class="proof-link" href="certificates/internship-elewayte.jpg" target="_blank" rel="noopener noreferrer">View offer letter ↗</a>
+        </div>
+      </div>
+      <div class="timeline-item" data-reveal>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">May 2026 &ndash; Present</span>
+          <h3>Content Writing Intern</h3>
+          <p class="timeline-org">InAmigos Foundation &ndash; via Internshala</p>
+          <a class="proof-link" href="certificates/internship-inamigos.jpg" target="_blank" rel="noopener noreferrer">View certificate of selection ↗</a>
+        </div>
+      </div>
+      <div class="timeline-item" data-reveal>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">April 2026</span>
+          <h3>Engineering Job Simulation</h3>
+          <p class="timeline-org">Forage x British Airways</p>
+          <ul class="timeline-list">
+            <li>Defect investigation and fix</li>
+            <li>Forecast material requirements and maintenance planning</li>
+          </ul>
+          <a class="proof-link" href="certificates/forage.jpg" target="_blank" rel="noopener noreferrer">View certificate ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <div class="section-inner">
+    <p class="section-tag" data-reveal>My Work</p>
+    <h2 class="section-title" data-reveal>Projects</h2>
+    <div class="projects-grid">
+
+      <article class="project-card" data-reveal>
+        <div class="project-preview">
+          <img src="project-previews/flowmetrics.png" alt="FlowMetrics preview" loading="lazy">
+          <span class="project-badge live">LIVE</span>
+        </div>
+        <div class="project-body">
+          <h3>FlowMetrics</h3>
+          <p class="project-desc">SaaS analytics dashboard product landing page. Visitors can sign
+            up with their email to join the waitlist, with duplicate-proof storage. Cyan &amp; dark
+            modern theme.</p>
+          <p class="project-tech">MongoDB</p>
+          <a href="https://flowmetrics-saas.vercel.app" target="_blank" rel="noopener noreferrer" class="project-link">
+            flowmetrics-saas.vercel.app ↗
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card" data-reveal>
+        <div class="project-preview">
+          <img src="project-previews/servesync.png" alt="ServeSync preview" loading="lazy">
+          <span class="project-badge live">LIVE</span>
+        </div>
+        <div class="project-body">
+          <h3>ServeSync</h3>
+          <p class="project-desc">Full-stack food delivery platform with role-based access for
+            customers, admins &amp; delivery partners &mdash; district-based routing, auto-assignment,
+            Razorpay payments, live GPS tracking, real-time notifications, scheduled orders, and an
+            admin analytics dashboard. Installable as a PWA.</p>
+          <p class="project-tech">React &middot; FastAPI &middot; MongoDB &middot; Razorpay &middot; Tailwind CSS &middot; JWT Auth &middot; Vercel &middot; Render</p>
+          <a href="https://servesynco.vercel.app/login" target="_blank" rel="noopener noreferrer" class="project-link">
+            servesynco.vercel.app ↗
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card" data-reveal>
+        <div class="project-preview">
+          <img src="project-previews/lumiere.png" alt="Lumiere Restaurant preview" loading="lazy">
+          <span class="project-badge live">LIVE</span>
+        </div>
+        <div class="project-body">
+          <h3>Lumiere Restaurant</h3>
+          <p class="project-desc">A luxury fine-dining restaurant website. Customers can make table
+            reservations &mdash; name, date, number of guests, special requests. Gold &amp; dark
+            elegant theme.</p>
+          <p class="project-tech">MongoDB</p>
+          <a href="https://lumiere-restaurant.vercel.app" target="_blank" rel="noopener noreferrer" class="project-link">
+            lumiere-restaurant.vercel.app ↗
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card" data-reveal>
+        <div class="project-preview">
+          <img src="project-previews/novabuild.png" alt="NovaBuild Agency preview" loading="lazy">
+          <span class="project-badge live">LIVE</span>
+        </div>
+        <div class="project-body">
+          <h3>NovaBuild Agency</h3>
+          <p class="project-desc">A digital agency website for web design &amp; development
+            services. Clients can submit project inquiries &mdash; name, email, service type, budget,
+            and project description. Violet/purple professional theme.</p>
+          <p class="project-tech">MongoDB</p>
+          <a href="https://novabuild-agency.vercel.app" target="_blank" rel="noopener noreferrer" class="project-link">
+            novabuild-agency.vercel.app ↗
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card" data-reveal>
+        <div class="project-preview">
+          <img src="project-previews/campusconnect.png" alt="Campus Connect preview" loading="lazy">
+          <span class="project-badge">FULL-STACK</span>
+        </div>
+        <div class="project-body">
+          <h3>Campus Connect</h3>
+          <p class="project-desc">Full-stack MERN web app for a college/campus community platform.
+            Auth with JWT &amp; Google OAuth plus email verification, real-time chat via Socket.io,
+            and an AI chatbot (OpenAI). Feature modules for book-sharing, clubs, placements,
+            complaints, and notifications, with a dashboard, profile, networking, and admin panel.</p>
+          <p class="project-tech">React 18 &middot; Vite &middot; Tailwind CSS &middot; Node.js &middot; Express &middot; MongoDB &middot; Socket.io &middot; OpenAI</p>
+        </div>
+      </article>
+
+      <article class="project-card" data-reveal>
+        <div class="project-preview">
+          <img src="project-previews/hangman.png" alt="Hangman preview" loading="lazy">
+          <span class="project-badge">DESKTOP APP</span>
+        </div>
+        <div class="project-body">
+          <h3>Hangman</h3>
+          <p class="project-desc">Classic word-guessing game as a standalone desktop app (not a
+            website). Tracks player stats &mdash; high score, wins, streak.</p>
+          <p class="project-tech">Python &middot; Flask &middot; MongoDB &middot; HTML/CSS/JS &middot; PyWebView</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section class="section section-alt" id="achievements">
+  <div class="section-inner">
+    <p class="section-tag" data-reveal>Recognition</p>
+    <h2 class="section-title" data-reveal>Achievements &amp; Certifications</h2>
+    <div class="achieve-grid">
+      <div class="achieve-card" data-reveal>
+        <div class="achieve-icon">🏆</div>
+        <h3>Consolation Prize &ndash; Ideathon 2025</h3>
+        <p>E-Cell IIT Bombay x National Entrepreneurship Challenge, Gouthami Institute &middot; Aug 2025</p>
+        <a class="proof-link" href="certificates/achievement-ideathon.jpg" target="_blank" rel="noopener noreferrer">View certificate ↗</a>
+      </div>
+      <div class="achieve-card" data-reveal>
+        <div class="achieve-icon">💻</div>
+        <h3>Multiple Coding Hackathons</h3>
+        <p>Solved real-world problems under competitive conditions; strengthened teamwork and rapid prototyping.</p>
+      </div>
+    </div>
+
+    <div class="cert-gallery" id="certifications" data-reveal>
+      <h3 class="cert-gallery-title">8 Certifications</h3>
+      <p class="modal-sub">Click a certificate to view it full-size.</p>
+      <div class="cert-grid">
+        <div class="cert-item" data-cert="certificates/genai-nasscom.jpg" data-name="Gen AI (Nasscom)">
+          <div class="cert-thumb">
+            <img src="certificates/genai-nasscom.jpg" alt="Gen AI - Nasscom certificate">
+            <span class="cert-view">🔍 View</span>
+          </div>
+          <span class="cert-name">Gen AI (Nasscom)</span>
+        </div>
+        <div class="cert-item" data-cert="certificates/python.jpg" data-name="Python">
+          <div class="cert-thumb">
+            <img src="certificates/python.jpg" alt="Python certificate">
+            <span class="cert-view">🔍 View</span>
+          </div>
+          <span class="cert-name">Python</span>
+        </div>
+        <div class="cert-item" data-cert="certificates/genai-in-action.jpg" data-name="Generative AI in Action">
+          <div class="cert-thumb">
+            <img src="certificates/genai-in-action.jpg" alt="Generative AI in Action certificate">
+            <span class="cert-view">🔍 View</span>
+          </div>
+          <span class="cert-name">Generative AI in Action</span>
+        </div>
+        <div class="cert-item" data-cert="certificates/ai-academic-excellence.jpg" data-name="AI for Academic Excellence">
+          <div class="cert-thumb">
+            <img src="certificates/ai-academic-excellence.jpg" alt="AI for Academic Excellence certificate">
+            <span class="cert-view">🔍 View</span>
+          </div>
+          <span class="cert-name">AI for Academic Excellence</span>
+        </div>
+        <div class="cert-item" data-cert="certificates/c-programming.jpg" data-name="C Programming">
+          <div class="cert-thumb">
+            <img src="certificates/c-programming.jpg" alt="C Programming certificate">
+            <span class="cert-view">🔍 View</span>
+          </div>
+          <span class="cert-name">C Programming</span>
+        </div>
+        <div class="cert-item" data-cert="certificates/forage.jpg" data-name="Forage">
+          <div class="cert-thumb">
+            <img src="certificates/forage.jpg" alt="Forage certificate">
+            <span class="cert-view">🔍 View</span>
+          </div>
+          <span class="cert-name">Forage</span>
+        </div>
+        <div class="cert-item" data-cert="certificates/cert7.jpg" data-name="Agentic AI Webinar">
+          <div class="cert-thumb">
+            <img src="certificates/cert7.jpg" alt="Agentic AI webinar certificate">
+            <span class="cert-view">🔍 View</span>
+          </div>
+          <span class="cert-name">Agentic AI Webinar</span>
+        </div>
+        <div class="cert-item" data-cert="certificates/cert8.jpg" data-name="Basic Coding in Python">
+          <div class="cert-thumb">
+            <img src="certificates/cert8.jpg" alt="Basic Coding in Python certificate">
+            <span class="cert-view">🔍 View</span>
+          </div>
+          <span class="cert-name">Basic Coding in Python</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="section-inner">
+    <p class="section-tag" data-reveal>Let's Connect</p>
+    <h2 class="section-title" data-reveal>Get In Touch</h2>
+    <div class="contact-grid">
+      <div class="contact-info" data-reveal>
+        <a class="contact-item" href="mailto:afsheenpatnam1@gmail.com">
+          <span class="contact-icon">✉️</span>
+          <span>afsheenpatnam1@gmail.com</span>
+        </a>
+        <a class="contact-item" href="tel:+919121825384">
+          <span class="contact-icon">📞</span>
+          <span>+91 9121825384</span>
+        </a>
+        <div class="contact-item">
+          <span class="contact-icon">📍</span>
+          <span>Tadipatri, Anantapur, AP</span>
+        </div>
+        <a class="contact-item" href="https://github.com/afsheenpatnam" target="_blank" rel="noopener noreferrer">
+          <span class="contact-icon">🐙</span>
+          <span>github.com/afsheenpatnam</span>
+        </a>
+        <a class="contact-item" href="Afsheen_Patnam_Resume.pdf" download>
+          <span class="contact-icon">📄</span>
+          <span>Download Resume</span>
+        </a>
+      </div>
+      <form class="contact-form" id="contactForm" data-reveal>
+        <div class="form-row">
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> Afsheen Patnam. Built with HTML, CSS &amp; JavaScript.</p>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<!-- LIGHTBOX for certificate full view -->
+<div class="lightbox" id="lightbox">
+  <button class="modal-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <img id="lightboxImg" src="" alt="Certificate full view">
+  <p id="lightboxCaption"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
