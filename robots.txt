@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://afsheen-patnam-portfolio.vercel.app/sitemap.xml
+Sitemap: https://afsheen-portfolio-six.vercel.app/sitemap.xml
