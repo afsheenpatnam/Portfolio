@@ -155,8 +155,9 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ---------- Contact form ---------- */
   const form = document.getElementById('contactForm');
   const formNote = document.getElementById('formNote');
+  const submitBtn = document.getElementById('contactSubmit');
 
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const name = document.getElementById('name').value.trim();
     const email = document.getElementById('email').value.trim();
@@ -167,12 +168,30 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    const subject = encodeURIComponent(`Portfolio message from ${name}`);
-    const body = encodeURIComponent(`${message}\n\n— ${name} (${email})`);
-    window.location.href = `mailto:afsheenpatnam1@gmail.com?subject=${subject}&body=${body}`;
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+    formNote.textContent = '';
 
-    formNote.textContent = "Opening your email client to send this message...";
-    form.reset();
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(Object.fromEntries(new FormData(form))),
+      });
+      const result = await response.json();
+
+      if (result.success) {
+        formNote.textContent = "Thanks! Your message has been sent.";
+        form.reset();
+      } else {
+        formNote.textContent = "Something went wrong. Please email me directly instead.";
+      }
+    } catch (err) {
+      formNote.textContent = "Something went wrong. Please email me directly instead.";
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Send Message';
+    }
   });
 
   /* ---------- Certificate images: fallback + lightbox ---------- */
