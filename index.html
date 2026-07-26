@@ -99,7 +99,7 @@
       </p>
       <div class="about-stats" data-reveal>
         <a class="stat-card" href="#projects">
-          <span class="stat-num" data-count="4">0</span>
+          <span class="stat-num" data-count="7">0</span>
           <span class="stat-label">Live Projects Deployed</span>
         </a>
         <a class="stat-card" href="#certifications">
@@ -107,7 +107,7 @@
           <span class="stat-label">Certifications</span>
         </a>
         <a class="stat-card" href="#experience">
-          <span class="stat-num" data-count="3">0</span>
+          <span class="stat-num" data-count="4">0</span>
           <span class="stat-label">Internships / Simulations</span>
         </a>
         <a class="stat-card" href="#languages">
@@ -277,6 +277,24 @@
           <a class="proof-link" href="certificates/forage.jpg" target="_blank" rel="noopener noreferrer">View certificate ↗</a>
         </div>
       </div>
+      <div class="timeline-item" data-reveal>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Jul &ndash; Aug 2026</span>
+          <h3>Full Stack Development Intern</h3>
+          <p class="timeline-org">CodeAlpha</p>
+          <a class="proof-link" href="certificates/internship-codealpha.jpg" target="_blank" rel="noopener noreferrer">View offer letter ↗</a>
+        </div>
+      </div>
+      <div class="timeline-item" data-reveal>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Jul 2026 &ndash; Present</span>
+          <h3>Full Stack Development Intern</h3>
+          <p class="timeline-org">Cognifyz IT Solutions Pvt. Ltd.</p>
+          <a class="proof-link" href="certificates/internship-cognifyz.jpg" target="_blank" rel="noopener noreferrer">View offer letter ↗</a>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -299,9 +317,12 @@
             up with their email to join the waitlist, with duplicate-proof storage. Cyan &amp; dark
             modern theme.</p>
           <p class="project-tech">MongoDB</p>
-          <a href="https://flowmetrics-saas.vercel.app" target="_blank" rel="noopener noreferrer" class="project-link">
-            flowmetrics-saas.vercel.app ↗
-          </a>
+          <div class="project-links">
+            <a href="https://flowmetrics-saas.vercel.app" target="_blank" rel="noopener noreferrer" class="project-link">
+              flowmetrics-saas.vercel.app ↗
+            </a>
+            <a href="https://github.com/afsheenpatnam/flowmetrics-saas" target="_blank" rel="noopener noreferrer" class="project-repo-link">View Code ↗</a>
+          </div>
         </div>
       </article>
 
@@ -317,9 +338,12 @@
             Razorpay payments, live GPS tracking, real-time notifications, scheduled orders, and an
             admin analytics dashboard. Installable as a PWA.</p>
           <p class="project-tech">React &middot; FastAPI &middot; MongoDB &middot; Razorpay &middot; Tailwind CSS &middot; JWT Auth &middot; Vercel &middot; Render</p>
-          <a href="https://servesynco.vercel.app/login" target="_blank" rel="noopener noreferrer" class="project-link">
-            servesynco.vercel.app ↗
-          </a>
+          <div class="project-links">
+            <a href="https://servesynco.vercel.app/login" target="_blank" rel="noopener noreferrer" class="project-link">
+              servesynco.vercel.app ↗
+            </a>
+            <a href="https://github.com/afsheenpatnam/ServeSync" target="_blank" rel="noopener noreferrer" class="project-repo-link">View Code ↗</a>
+          </div>
         </div>
       </article>
 
@@ -334,9 +358,12 @@
             reservations &mdash; name, date, number of guests, special requests. Gold &amp; dark
             elegant theme.</p>
           <p class="project-tech">MongoDB</p>
-          <a href="https://lumiere-restaurant.vercel.app" target="_blank" rel="noopener noreferrer" class="project-link">
-            lumiere-restaurant.vercel.app ↗
-          </a>
+          <div class="project-links">
+            <a href="https://lumiere-restaurant.vercel.app" target="_blank" rel="noopener noreferrer" class="project-link">
+              lumiere-restaurant.vercel.app ↗
+            </a>
+            <a href="https://github.com/afsheenpatnam/lumiere-restaurant-" target="_blank" rel="noopener noreferrer" class="project-repo-link">View Code ↗</a>
+          </div>
         </div>
       </article>
 
@@ -351,9 +378,12 @@
             services. Clients can submit project inquiries &mdash; name, email, service type, budget,
             and project description. Violet/purple professional theme.</p>
           <p class="project-tech">MongoDB</p>
-          <a href="https://novabuild-agency.vercel.app" target="_blank" rel="noopener noreferrer" class="project-link">
-            novabuild-agency.vercel.app ↗
-          </a>
+          <div class="project-links">
+            <a href="https://novabuild-agency.vercel.app" target="_blank" rel="noopener noreferrer" class="project-link">
+              novabuild-agency.vercel.app ↗
+            </a>
+            <a href="https://github.com/afsheenpatnam/novabuild-agency-" target="_blank" rel="noopener noreferrer" class="project-repo-link">View Code ↗</a>
+          </div>
         </div>
       </article>
 
@@ -375,13 +405,63 @@
       <article class="project-card" data-reveal>
         <div class="project-preview">
           <img src="project-previews/hangman.png" alt="Hangman preview" loading="lazy">
-          <span class="project-badge">DESKTOP APP</span>
+          <span class="project-badge live">LIVE</span>
         </div>
         <div class="project-body">
           <h3>Hangman</h3>
-          <p class="project-desc">Classic word-guessing game as a standalone desktop app (not a
-            website). Tracks player stats &mdash; high score, wins, streak.</p>
+          <p class="project-desc">Browser-based word-guessing game with three difficulty levels,
+            score multipliers, and win/streak tracking. Also runs as a standalone desktop app via
+            PyWebView.</p>
           <p class="project-tech">Python &middot; Flask &middot; MongoDB &middot; HTML/CSS/JS &middot; PyWebView</p>
+          <div class="project-links">
+            <a href="https://hangman-eight-rust.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+              hangman-eight-rust.vercel.app ↗
+            </a>
+            <a href="https://github.com/afsheenpatnam/Hangman" target="_blank" rel="noopener noreferrer" class="project-repo-link">View Code ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-reveal>
+        <div class="project-preview">
+          <img src="project-previews/visual-diary.png" alt="Visual Diary preview" loading="lazy">
+          <span class="project-badge live">LIVE</span>
+        </div>
+        <div class="project-body">
+          <h3>Visual Diary</h3>
+          <p class="project-desc">A Pinterest-style photo board app. Masonry pin grid across 10
+            categories, pin detail view with related suggestions, add/delete pins with live preview,
+            search &amp; filter by title/description/category &mdash; seeded with 500 real categorized
+            photos from the Pexels API.</p>
+          <p class="project-tech">Node.js &middot; Express &middot; MongoDB &middot; Mongoose &middot; HTML/CSS/JS &middot; Vercel</p>
+          <div class="project-links">
+            <a href="https://visual-diary-beta.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+              visual-diary-beta.vercel.app ↗
+            </a>
+            <a href="https://github.com/afsheenpatnam/Visual-Diary" target="_blank" rel="noopener noreferrer" class="project-repo-link">View Code ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card" data-reveal>
+        <div class="project-preview">
+          <img src="project-previews/mediflow.png" alt="MediFlow preview" loading="lazy">
+          <span class="project-badge live">LIVE</span>
+        </div>
+        <div class="project-body">
+          <h3>MediFlow</h3>
+          <p class="project-desc">AI healthcare navigation platform with two role-based portals.
+            Patients get a unified dashboard (appointments, prescriptions, medications, timeline)
+            with an AI symptom checker and drug interaction detection; doctors get AI-generated
+            patient summaries, risk scoring, and hospital-wide analytics. Backend-enforced role
+            separation with real Hugging Face AI calls.</p>
+          <p class="project-tech">React 18 &middot; TypeScript &middot; Vite &middot; Tailwind CSS &middot; FastAPI &middot; JWT Auth + bcrypt &middot; Hugging Face Inference API &middot; Vercel &middot; Render</p>
+          <div class="project-links">
+            <a href="https://mediflow-snowy.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+              mediflow-snowy.vercel.app ↗
+            </a>
+            <a href="https://github.com/afsheenpatnam/mediflow" target="_blank" rel="noopener noreferrer" class="project-repo-link">View Code ↗</a>
+          </div>
         </div>
       </article>
 
